@@ -1,0 +1,26 @@
+## Dev values
+database:
+  host: uk-nonprod001-titmouse-db.postgres.database.azure.com
+  user_name: gdm-articles@uk-nonprod001-titmouse-db
+  su_name: uk-training-base@uk-nonprod001-titmouse-db
+  name: gdm-articles
+
+imagePullPolicy: IfNotPresent
+# This placeholder value gets overridden by devops-release-config during a release
+imagetag: r1.8.0
+
+host_env: azure
+
+# proxy_url is the tyk api gateway URL
+gdm_articles_www: https://api-uk-np.sensynehealth.com/gdm-articles
+proxy_url: https://api-uk-np.sensynehealth.com
+
+environment: TRAINING
+
+allow_drop_data: false
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hostName: api-uk-nonprod-upstream.sensynehealth.com # upstream URL

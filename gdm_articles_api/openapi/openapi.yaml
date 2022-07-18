@@ -1,0 +1,428 @@
+openapi: 3.0.3
+info:
+  description: The GDM Articles API is responsible for storing and retrieving articles
+    for GDM.
+  title: GDM Articles API
+  version: 1.0.0
+paths:
+  /running:
+    get:
+      summary: Verify service is running
+      description: Verifies that the service is running. Used for monitoring in kubernetes.
+      tags:
+      - monitoring
+      responses:
+        '200':
+          description: If we respond, we are running
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  running:
+                    type: boolean
+                    example: true
+      operationId: flask_batteries_included.blueprint_monitoring.app_running
+  /version:
+    get:
+      summary: Get version information
+      description: Get the version number, circleci build number, and git hash.
+      tags:
+      - monitoring
+      responses:
+        '200':
+          description: Version numbers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  circle:
+                    type: string
+                    example: '1234'
+                  hash:
+                    type: string
+                    example: 366c204
+      operationId: flask_batteries_included.blueprint_monitoring.app_version
+  /gdm/v1/image/{filename}:
+    get:
+      summary: Get an image
+      description: Get an image by filename.
+      tags:
+      - article
+      parameters:
+      - name: filename
+        in: path
+        required: true
+        description: Image filename to retrieve
+        schema:
+          type: string
+          example: image.png
+      responses:
+        '200':
+          description: Returns image for given filename
+          content:
+            image/png:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.get_image
+  /gdm/v1/article:
+    get:
+      summary: Get all articles
+      description: Retrieve all articles.
+      tags:
+      - article
+      parameters:
+      - name: tag
+        in: query
+        required: false
+        description: Tag to filter articles by
+        schema:
+          type: string
+          example: recipe
+      responses:
+        '200':
+          description: The requested articles for the given subject tag
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ArticleResponse'
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.get_all_articles
+    post:
+      summary: Create new article
+      description: Create a new article
+      tags:
+      - article
+      requestBody:
+        description: JSON body containing the article
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArticleSchema'
+      responses:
+        '200':
+          description: The new article
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArticleResponse'
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.create_article
+  /gdm/v1/article/{article_id}:
+    get:
+      summary: Get article by UUID
+      description: Get an article by UUID
+      tags:
+      - article
+      parameters:
+      - name: article_id
+        in: path
+        required: true
+        description: ID of the article to retrieve
+        schema:
+          type: string
+          example: 3eba78fc-2e44-4fdd-9064-39e9330d78e8
+      responses:
+        '200':
+          description: The requested article
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArticleResponse'
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.get_article_by_id
+    delete:
+      summary: Delete article
+      description: Delete a article by UUID
+      tags:
+      - article
+      parameters:
+      - name: article_id
+        in: path
+        required: true
+        description: The article UUID
+        schema:
+          type: string
+          example: 18439f36-ffa9-42ae-90de-0beda299cd37
+      responses:
+        '200':
+          description: The deleted article
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArticleResponse'
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.delete_article
+    patch:
+      summary: Update article
+      description: Update a article by UUID
+      tags:
+      - article
+      parameters:
+      - name: article_id
+        in: path
+        required: true
+        description: The article UUID
+        schema:
+          type: string
+          example: 18439f36-ffa9-42ae-90de-0beda299cd37
+      requestBody:
+        description: JSON body containing the article fields to be updated
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArticlePatchRequest'
+      responses:
+        '200':
+          description: The updated article
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArticleResponse'
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: gdm_articles_api.blueprint_api.patch_article
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: HTTP response code
+          example: 404
+        message:
+          type: string
+          description: Message attached to response
+          example: Not Found
+      required:
+      - code
+      description: An error response in json format
+    LinkSchema:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title
+          example: Diabetes
+        intro:
+          type: string
+          description: Introduction
+          example: This is the introduction
+        url:
+          type: string
+          description: Link url
+          example: www.sensynehealth.com
+        image:
+          type: string
+          description: Image url
+          example: image.png
+      required:
+      - image
+      - intro
+      - title
+      - url
+    ArticleSchema:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title
+          example: Diabetes
+        intro:
+          type: string
+          description: Introduction
+          example: This is the introduction
+        body:
+          type: string
+          description: Introduction
+          example: This is the body
+        image:
+          type: string
+          description: Image url
+          example: image.png
+        video:
+          type: string
+          description: Video url
+          example: image.mp4
+        tags:
+          type: array
+          description: Tags with which the article is associated
+          items:
+            type: string
+            description: Tag name
+            example: medication
+        links:
+          description: Links with which the article is associated
+          type: array
+          items:
+            $ref: '#/components/schemas/LinkSchema'
+      required:
+      - body
+      - image
+      - intro
+      - title
+      description: Article create request
+    ArticlePatchRequest:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title
+          example: Diabetes
+        intro:
+          type: string
+          description: Introduction
+          example: This is the introduction
+        body:
+          type: string
+          description: Introduction
+          example: This is the body
+        image:
+          type: string
+          description: Image url
+          example: image.png
+        video:
+          type: string
+          description: Video url
+          example: image.mp4
+        tags:
+          type: array
+          description: Tags with which the article is associated
+          items:
+            type: string
+            description: Tag name
+            example: medication
+        links:
+          description: Links with which the article is associated
+          type: array
+          items:
+            $ref: '#/components/schemas/LinkSchema'
+      description: Article update request
+    ArticleResponse:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title
+          example: Diabetes
+        intro:
+          type: string
+          description: Introduction
+          example: This is the introduction
+        body:
+          type: string
+          description: Introduction
+          example: This is the body
+        image:
+          type: string
+          description: Image url
+          example: image.png
+        video:
+          type: string
+          description: Video url
+          example: image.mp4
+        tags:
+          type: array
+          description: Tags with which the article is associated
+          items:
+            type: string
+            description: Tag name
+            example: medication
+        links:
+          description: Links with which the article is associated
+          type: array
+          items:
+            $ref: '#/components/schemas/LinkSchema'
+        uuid:
+          type: string
+          description: Universally unique identifier for object
+          example: 2c4f1d24-2952-4d4e-b1d1-3637e33cc161
+        created:
+          type: string
+          description: When the object was created
+          example: '2017-09-23T08:29:19.123+00:00'
+        created_by:
+          type: string
+          description: UUID of the user that created the object
+          example: d26570d8-a2c9-4906-9c6a-ea1a98b8b80f
+        modified:
+          type: string
+          description: When the object was modified
+          example: '2017-09-23T08:29:19.123+00:00'
+        modified_by:
+          type: string
+          description: UUID of the user that modified the object
+          example: 2a0e26e5-21b6-463a-92e8-06d7290067d0
+      required:
+      - body
+      - image
+      - intro
+      - title
+      - uuid
+  responses:
+    BadRequest:
+      description: Bad or malformed request was received
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    ServiceUnavailable:
+      description: Service or dependent resource not available
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

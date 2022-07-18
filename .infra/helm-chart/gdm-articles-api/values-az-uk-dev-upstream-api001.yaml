@@ -1,0 +1,22 @@
+## Dev values
+database:
+  host: uk-dev-api-upstream-quail-db.postgres.database.azure.com
+  user_name: gdm-articles@uk-dev-api-upstream-quail-db
+  su_name: postgres@uk-dev-api-upstream-quail-db
+  name: gdm-articles
+
+environment: DEVELOPMENT
+
+# proxy_url is the tyk api gateway URL
+gdm_articles_www: https://api-uk-dev.sensynehealth.com/gdm-articles
+proxy_url: https://api-uk-dev.sensynehealth.com
+
+imagePullPolicy: Always
+# This placeholder value gets overridden by devops-release-config during a release
+imagetag: dev
+allow_drop_data: true
+host_env: azure
+log_level: DEBUG
+
+ingress:
+  hostName: api-dev.sensynehealth.local

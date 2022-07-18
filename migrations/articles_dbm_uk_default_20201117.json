@@ -1,0 +1,119 @@
+[
+  {
+    "body": "There are many things you can do to help keep your blood glucose levels under control, and here are some links that you may find useful.",
+    "created": "2020-10-23T13:46:06.281Z",
+    "image": "section_managing",
+    "intro": "Your care team has asked you to use DBm-Health to record your blood glucose levels so they can assess how your treatment is going.",
+    "links": [
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "nhs",
+        "intro": "Diabetes information from the NHS",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "NHS.UK",
+        "url": "https://www.nhs.uk/conditions/Diabetes/",
+        "uuid": "f2e5197d-4cc7-4ee0-b6a9-098f688abc3a"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "diabetes-uk",
+        "intro": "I have type 2 diabetes – what can I eat?",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "DIABETES.ORG.UK",
+        "url": "https://www.diabetes.org.uk/guide-to-diabetes/enjoy-food/eating-with-diabetes/i-have-type-2-diabetes",
+        "uuid": "aa214850-d17f-4288-b7f0-45dd71f9012d"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "diabetes-uk",
+        "intro": "I have type 1 diabetes – what can I eat?",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "DIABETES.ORG.UK",
+        "url": "https://www.diabetes.org.uk/guide-to-diabetes/enjoy-food/eating-with-diabetes/i-have-type-1-diabetes",
+        "uuid": "aa214850-d17f-4288-b7f0-45dd71f9022d"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "bda",
+        "intro": "Free videos for people with, or at risk of, diabetes.",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "BDA.UK.COM ",
+        "url": "https://www.bda.uk.com/specialist-groups-and-branches/diabetes-specialist-group/resources/video-resources.html",
+        "uuid": "aa214850-d17f-4288-b7f0-45dd71f9032d"
+      }
+    ],
+    "modified": "2018-03-26T13:46:06.281Z",
+    "tags": ["dbm-uk-default"],
+    "title": "Managing your blood glucose",
+    "uuid": "9ae1f87f-4b3e-4f21-92ae-79c02016fa52"
+  },
+  {
+    "body": "Healthy weight can also reduce secondary risks such as strokes and heart disease.\n\nBlood glucose control can become more manageable with a healthy weight. It is important to seek support where there is difficulty losing any extra weight, as this can be very challenging. There are a number of resources on the NHS website and diabetes.org.uk.",
+    "created": "2020-10-23T13:46:06.281Z",
+    "image": "section_weight",
+    "intro": "Weight management can be a very personal and sensitive issue. A healthy weight in diabetes can have significant benefits for people living with diabetes, especially type 2 diabetes.",
+    "links": [
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "nhs",
+        "intro": "Diabetes information from the NHS",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "NHS.UK",
+        "url": "https://www.nhs.uk/conditions/Diabetes/",
+        "uuid": "2f642c77-b35e-4280-86ef-335dc0b8af9b"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "diabetes-uk",
+        "intro": "Weight loss and diabetes",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "DIABETES.ORG.UK",
+        "url": "https://www.diabetes.org.uk/guide-to-diabetes/enjoy-food/eating-with-diabetes/whats-your-healthy-weight/lose-weight",
+        "uuid": "aa214850-d17f-4288-b7f0-55dd71f9022d"
+      }
+    ],
+    "modified": "2020-10-23T13:46:06.281Z",
+    "tags": ["dbm-uk-default"],
+    "title": "Weight management",
+    "uuid": "486631ac-76aa-4774-9bef-a0012c39c4b6"
+  },
+  {
+    "body": "Being active can improve insulin sensitivity and can help manage glucose control in diabetes.\n\nOther benefits of physical activity include maintaining a healthy blood pressure, better quality of sleep as well as improving muscle strength, ligaments and tendons around joints. There are resources about keeping fit on the NHS and diabetes.org.uk. websites.",
+    "created": "2020-10-23T13:46:06.281Z",
+    "image": "section_activityandexercise",
+    "intro": "Keeping fit and remaining active provides people with more energy and helps with feeling positive and maintaining a healthy weight.",
+    "links": [
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "nhs",
+        "intro": "Exercise and sport for type 1 diabetics",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "NHS.UK",
+        "url": "https://www.nhs.uk/conditions/type-1-diabetes/exercise-and-sport/",
+        "uuid": "2f742c77-b35e-4280-86ef-335dc0b8af9b"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "nhs",
+        "intro": "Exercise and type 2 diabetes",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "NHS.UK",
+        "url": "https://www.nhs.uk/news/diabetes/exercise-helps-control-type-2-diabetes/",
+        "uuid": "2f642c87-b35e-4280-86ef-335dc0b8af9b"
+      },
+      {
+        "created": "2020-10-23T13:46:06.281Z",
+        "image": "diabetes-uk",
+        "intro": "Getting active",
+        "modified": "2020-10-23T13:46:06.281Z",
+        "title": "DIABETES.ORG.UK",
+        "url": "https://www.diabetes.org.uk/Guide-to-diabetes/Managing-your-diabetes/Exercise",
+        "uuid": "aa214851-d17f-4288-b7f0-55dd71f9022d"
+      }
+    ],
+    "modified": "2020-10-23T13:46:06.281Z",
+    "tags": ["dbm-uk-default"],
+    "title": "Activity and fitness",
+    "uuid": "305ad64d-45ed-4376-9fa2-0b51993bc301"
+  }
+]

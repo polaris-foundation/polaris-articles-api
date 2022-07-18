@@ -1,0 +1,18 @@
+[paths]
+source =
+    gdm_articles_api/*
+
+[report]
+omit =
+  **/__init__.py
+  **/__main__.py
+  gdm_articles_api/app.py
+  gdm_articles_api/config.py
+  gdm_articles_api/autoapp.py
+  gdm_articles_api/resources/*
+  gdm_articles_api/blueprint_development/*.py
+
+fail_under = 90
+
+show_missing = true
+skip_covered = true

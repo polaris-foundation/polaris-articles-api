@@ -1,0 +1,232 @@
+[
+    {
+        "body": "GDM can be managed by healthy eating, physical activity, weight management and medication. This app contains some useful tips for maintaining a healthy lifestyle, to support your individual programme for managing GDM.",
+        "created": "2018-04-10T15:14:20.119Z",
+        "created_by": "sys",
+        "image": "{image_path}/about.png",
+        "intro": "Gestational diabetes (or GDM) is a condition where you develop high blood glucose levels. This usually happens in the second half of pregnancy. GDM can affect you and your baby's health.",
+        "links": [
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/nhs.png",
+                "intro": "Overview and treatment information by the NHS.",
+                "modified": "2018-04-10T15:14:20.124Z",
+                "modified_by": "sys",
+                "title": "NHS.UK",
+                "url": "http://www.nhs.uk/conditions/gestational-diabetes/Pages/Introduction.aspx",
+                "uuid": "49a61f45-2463-417e-bea7-c66c3c49bd25"
+            },
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/diabetes-uk.png",
+                "intro": "Basic information and advice from Diabetes UK.",
+                "modified": "2018-04-10T15:14:20.124Z",
+                "modified_by": "sys",
+                "title": "DIABETES.ORG.UK",
+                "url": "https://www.diabetes.org.uk/Diabetes-the-basics/Gestational-diabetes/",
+                "uuid": "220423fa-1365-48e3-a4d2-7123740fcaf0"
+            }
+        ],
+        "modified": "2018-04-10T15:14:20.119Z",
+        "modified_by": "sys",
+        "tags": ["gdm-uk-default"],
+        "title": "About GDM",
+        "uuid": "1c82c7ea-e984-41d3-b1e4-6228b400454d",
+        "video": "https://youtu.be/8w5Dsmt1KSw"
+    },
+    {
+        "body": "A healthy diet is recommended for all pregnant women. There are some foods that you are advised to avoid during pregnancy, and there are other dietary factors to consider when you have GDM which can affect your blood glucose. The main nutrient affecting blood glucose levels is called carbohydrate. This programme gives you more information about how diet can affect you, along with some recipes aimed to improve your condition and general health. You can find out more about diet and Gestational Diabetes by watching this video:",
+        "created": "2018-04-10T15:14:20.119Z",
+        "created_by": "sys",
+        "image": "{image_path}/food.png",
+        "intro": "What you eat during pregnancy can help your baby grow healthily and get the best start in life.",
+        "links": [
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/nhs.png",
+                "intro": "Your pregnancy and baby guide from the NHS.",
+                "modified": "2018-04-10T15:14:20.124Z",
+                "modified_by": "sys",
+                "title": "NHS.UK",
+                "url": "http://www.nhs.uk/conditions/pregnancy-and-baby/pages/healthy-pregnancy-diet.aspx",
+                "uuid": "e2fa4bfd-0f97-4b28-8b2b-11124fbcb173"
+            },
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/bda.png",
+                "intro": "Food fact sheet for pregnancy from the Association of UK Dieticians.",
+                "modified": "2018-04-10T15:14:20.124Z",
+                "modified_by": "sys",
+                "title": "BDA.UK.COM",
+                "url": "https://www.bda.uk.com/foodfacts/Pregnancy.pdf",
+                "uuid": "f06652ea-cf49-4e72-a340-0a59a12bdbcb"
+            }
+        ],
+        "modified": "2018-04-10T15:14:20.119Z",
+        "modified_by": "sys",
+        "tags": ["gdm-uk-default"],
+        "title": "Food & diet",
+        "uuid": "040923f4-4436-4779-a363-f957afe53d98",
+        "video": "https://youtu.be/0LAvsCfHvaQ"
+    },
+    {
+        "body": "Although it is important to limit weight gain in pregnancy, dieting for weight loss is not recommended. Many women want to know how much weight they should gain in pregnancy. Weight gain during pregnancy depends on your weight and body mass index (BMI) before you became pregnant. You can find out more about weight management by watching this video:",
+        "created": "2018-04-10T15:14:20.119Z",
+        "created_by": "sys",
+        "image": "{image_path}/weight.jpg",
+        "intro": "Excessive weight gain in pregnancy can harm you and your baby's health.",
+        "links": [
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/nhs.png",
+                "intro": "New weight advice for pregnancy from the NHS.",
+                "modified": "2018-04-10T15:14:20.124Z",
+                "modified_by": "sys",
+                "title": "NHS.UK",
+                "url": "http://www.nhs.uk/news/2010/July07/Pages/new-nice-guidelines-weight-pregnancy.aspx",
+                "uuid": "63fabf03-0cfc-4195-88c9-abc171320e0e"
+            }
+        ],
+        "modified": "2018-04-10T15:14:20.119Z",
+        "modified_by": "sys",
+        "tags": ["gdm-uk-default"],
+        "title": "Weight management",
+        "uuid": "86ca6744-97e7-4cf6-bfb4-9fadf1730c4b",
+        "video": "https://youtu.be/_poto0Gg_NI"
+    },
+    {
+        "body": "Physical activity can help control blood glucose levels, improve pregnancy outcomes as well as support weight management. You can find out more about activity and fitness by watching this video:",
+        "created": "2018-04-10T15:14:20.119Z",
+        "created_by": "sys",
+        "image": "{image_path}/activity.png",
+        "intro": "Physical activity is recommended as it benefits both you and your baby's health.",
+        "links": [
+            {
+                "created": "2018-04-10T15:14:20.124Z",
+                "created_by": "sys",
+                "image": "{image_path}/nhs.png",
+                "intro": "Advice for exercise in pregnancy from the NHS.",
+                "modified": "2020-01-21T17:03:16.015Z",
+                "modified_by": "sys",
+                "title": "NHS.UK",
+                "url": "https://www.nhs.uk/conditions/pregnancy-and-baby/pregnancy-exercise/",
+                "uuid": "5b889584-8e88-4961-9c69-b2185cb713d9"
+            }
+        ],
+        "modified": "2018-04-10T15:14:20.119Z",
+        "modified_by": "sys",
+        "tags": ["gdm-uk-default"],
+        "title": "Activity & fitness",
+        "uuid": "999d86d3-5f19-48e7-8170-466dbb297ad3",
+        "video": "https://youtu.be/0dEsNTmGx8s"
+    },
+    {
+        "body": "GDM can be managed by healthy eating, physical activity, weight management and medication. Your clinician will be able to provide more information about how to manage your GDM.",
+        "created": "2020-03-05T10:55:03.059Z",
+        "created_by": "sys",
+        "image": "{image_path}/about.png",
+        "intro": "Gestational diabetes (or GDM) is a condition where you develop high blood sugar levels. This usually happens in the second half of pregnancy. GDM can affect you and your baby's health.",
+        "links": [
+            {
+                "created": "2020-03-05T10:55:03.173Z",
+                "created_by": "sys",
+                "image": "{image_path}/diabetes-uk.png",
+                "intro": "Information about GDM from the American Diabetes Association.",
+                "modified": "2020-03-05T10:55:03.173Z",
+                "modified_by": "sys",
+                "title": "DIABETES.ORG",
+                "url": "https://www.diabetes.org/diabetes/gestational-diabetes",
+                "uuid": "2b4951a2-0ca1-4855-bee3-81741e186c57"
+            }
+        ],
+        "modified": "2020-03-05T10:55:03.059Z",
+        "modified_by": "sys",
+        "tags": ["gdm-us-default"],
+        "title": "About GDM",
+        "uuid": "29ca9fe5-0db8-497b-8560-b66fcd05d7a1",
+        "video": null
+    },
+    {
+        "body": "A healthy diet is recommended for all pregnant women. There are some foods that you are advised to avoid during pregnancy, and there are other dietary factors to consider when you have GDM which affects your blood sugar. The main nutrient affecting blood sugar levels is called carbohydrate. Your clinician will be able to advise you further about how the better manage your GDM through diet.",
+        "created": "2020-03-05T10:55:03.850Z",
+        "created_by": "sys",
+        "image": "{image_path}/food.png",
+        "intro": "What you eat during pregnancy can help your baby grow healthily and get the best start in life.",
+        "links": [
+            {
+                "created": "2020-03-05T10:55:03.854Z",
+                "created_by": "sys",
+                "image": "{image_path}/diabetes-uk.png",
+                "intro": "Dietary advice from the American Diabetes Association.",
+                "modified": "2020-03-05T10:55:03.854Z",
+                "modified_by": "sys",
+                "title": "DIABETES.ORG",
+                "url": "https://www.diabetes.org/nutrition",
+                "uuid": "8a96d7a5-b42c-4f34-91cf-8b72af50ac4e"
+            }
+        ],
+        "modified": "2020-03-05T10:55:03.850Z",
+        "modified_by": "sys",
+        "tags": ["gdm-us-default"],
+        "title": "Food & diet",
+        "uuid": "d792dc43-d8cc-4ced-8810-e12f08ecd9cc",
+        "video": null
+    },
+    {
+        "body": "Although it is important to limit weight gain in pregnancy, dieting for weight loss is not recommended. Many women want to know how much weight they should gain in pregnancy. Weight gain during pregnancy depends on your weight and body mass index (BMI) before you became pregnant. Your clinician will be able to advise you further about weight management and GDM.",
+        "created": "2020-03-05T10:55:04.333Z",
+        "created_by": "sys",
+        "image": "{image_path}/weight.jpg",
+        "intro": "Excessive weight gain in pregnancy can harm you and your baby's health.",
+        "links": [
+            {
+                "created": "2020-03-05T10:55:04.336Z",
+                "created_by": "sys",
+                "image": "{image_path}/diabetes-uk.png",
+                "intro": "Weight gain recommendations during pregnancy.",
+                "modified": "2020-03-05T10:55:04.336Z",
+                "modified_by": "sys",
+                "title": "Weight gain calculator",
+                "url": "https://www.calculator.net/pregnancy-weight-gain-calculator.html",
+                "uuid": "8fd0e1df-baee-453b-9dcb-e2639e6e6477"
+            }
+        ],
+        "modified": "2020-03-05T10:55:04.333Z",
+        "modified_by": "sys",
+        "tags": ["gdm-us-default"],
+        "title": "Weight management",
+        "uuid": "4fcafc9c-baac-4419-aef1-4a63c8ca48be",
+        "video": null
+    },
+    {
+        "body": "Physical activity can help control blood sugar levels, improve pregnancy outcomes as well as support weight management. Your clinician will be able to advise you further about activity and fitness and GDM.",
+        "created": "2020-03-05T10:55:04.797Z",
+        "created_by": "sys",
+        "image": "{image_path}/activity.png",
+        "intro": "Physical activity is recommended as it benefits both you and your baby's health.",
+        "links": [
+            {
+                "created": "2020-03-05T10:55:04.800Z",
+                "created_by": "sys",
+                "image": "{image_path}/diabetes-uk.png",
+                "intro": "Pregnancy exercise advice from the American College of Obstetricians & Gynecologists.",
+                "modified": "2020-03-05T10:55:04.800Z",
+                "modified_by": "sys",
+                "title": "ACOG.ORG",
+                "url": "https://www.acog.org/Patients/FAQs/Exercise-During-Pregnancy",
+                "uuid": "e30306fe-1248-4198-8b69-11104d15b55c"
+            }
+        ],
+        "modified": "2020-03-05T10:55:04.797Z",
+        "modified_by": "sys",
+        "tags": ["gdm-us-default"],
+        "title": "Activity & fitness",
+        "uuid": "ff2e9325-aeac-4cf8-a373-f7e0c9ec898c",
+        "video": null
+    }
+]

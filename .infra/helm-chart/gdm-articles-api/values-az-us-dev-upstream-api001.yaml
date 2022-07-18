@@ -1,0 +1,22 @@
+database:
+  host: us-dev-upstream-api001-goldfish-db.postgres.database.azure.com
+  user_name: gdm-articles@us-dev-upstream-api001-goldfish-db
+  su_name: postgres@us-dev-upstream-api001-goldfish-db
+  name: gdm-articles
+
+imagePullPolicy: IfNotPresent
+# This placeholder value gets overridden by devops-release-config-prod during a release
+imagetag: r1.12.0
+
+host_env: azure
+
+# proxy_url is the tyk api gateway URL
+gdm_articles_www: https://api-us-dev.sensynehealth.com/gdm-articles
+proxy_url: https://api-us-dev.sensynehealth.com
+
+environment: DEVELOPMENT
+
+allow_drop_data: false
+
+ingress:
+  hostName: api-dev.sensynehealth.local
