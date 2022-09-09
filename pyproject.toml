@@ -1,14 +1,10 @@
 [tool.poetry]
 name = "gdm-articles-api"
 version = "0.0.1"
-description = "Articles API to manage articles for GDM"
+description = "Articles API to manage articles for Polaris"
 authors = ["Andrew Gill <andrew.gill@sensynehealth.com>"]
-keywords = ["Articles", "GDM"]
-repository = "https://github.com/draysontechnologies/gdm-articles-api"
-
-[[tool.poetry.source]]
-name = "sensynehealth"
-url = "https://pypi.fury.io/sensynehealth/"
+keywords = ["Articles", "GDM", "Polaris"]
+repository = "https://github.com/polaris-foundation/polaris-articles-api"
 
 [tool.poetry.dependencies]
 python = "^3.9"
